@@ -1,4 +1,4 @@
-document.querySelector('.page-loaded').innerTrext = (new Date()).toLocaleTimeString();
+document.querySelector('.page-loaded').innerText = (new Date()).toLocaleTimeString();
 
 document.querySelector('.ajax-get-html').addEventListener('click', ajaxGetHtml);
 
