@@ -1,6 +1,6 @@
 document.querySelector('.page-loaded').innerTrext = (new Date()).toLocaleTimeString();
 
-document.querySelector('.ajax-get-html').addEventListner('click', ajaxGetHtml);
+document.querySelector('.ajax-get-html').addEventListener('click', ajaxGetHtml);
 
 function ajaxGetHtml(){
     const xhr = new XMLHttpRequest();
