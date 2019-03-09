@@ -13,3 +13,14 @@ function ajaxGetHtml(){
     xhr.send();
     
 }
+
+document.querySelector('.regForm ').addEventListener('submit', submitForm);
+
+function submitForm(e){
+   e.preventDefault();
+    fetch('php/form.php',{method: 'POST', body: new FormData(document.querySelector('.regForm '))} 
+
+    )
+    .then(response=> response.text())
+    .then(html=> document.querySelector('.server-response').innerHTML=html)
+}
