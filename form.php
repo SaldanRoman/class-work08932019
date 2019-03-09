@@ -1,4 +1,5 @@
 <p>
-    Welcome <?php echo $_POST["name"]; ?><br>
-    Your password is registere: <?php echo $_POST["password"]; ?>
+    User name: <?php echo $POST["user-name"];?><br>
+    User email: <? php echo $POST["email"];?><br>
+    User message: <? php echo $POST["message"];?>
 </p>
