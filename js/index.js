@@ -14,11 +14,11 @@ function ajaxGetHtml(){
     
 }
 
-document.querySelector('.regForm ').addEventListener('submit', submitForm);
+document.querySelector('.login-form').addEventListener('submit', submitForm);
 
 function submitForm(e){
    e.preventDefault();
-    fetch('php/form.php',{method: 'POST', body: new FormData(document.querySelector('.regForm '))} 
+    fetch('form.php',{method: 'POST', body: new FormData(document.querySelector('.login-form'))} 
 
     )
     .then(response=> response.text())
