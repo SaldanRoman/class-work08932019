@@ -4,15 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ajax Get HTML</title>
+    <title>Ajax/FETCH</title>
 </head>
 <body>
     <div class="page-loaded"></div>
     <section>
         <h1>AJAX GET HTML</h1>
         <div class="html-container"></div>
-        <button class="ajax-get-html">AJAX GET HTML</button>
+        <button class="ajax-get-html">get-html</button> 
     </section>
-    <script type="text/javascript" src="js/index.js"></script>
+    
+    <section>
+        <form class="regForm">
+           <label>Your name: <input type="text" name="name"></label> 
+           <label>Your email: <input type="email" name="email"></label>
+           <label>Your message: <input type="text" name="message"></label> 
+           <input type="submit">
+        </form>
+        <div class="server-response"></div>
+    </section>
+    <script src="js/index.js"></script>
 </body>
 </html>
